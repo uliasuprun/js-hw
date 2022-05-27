@@ -306,19 +306,19 @@
 // Вызов makeTransaction(2000, 8, 10000) возвращает "Insufficient funds!"
 // Вызов makeTransaction(500, 10, 5000) возвращает "You ordered 10 droids, you have 0 credits left"
 
-// function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
-// let message;
-// // Change code below this line
-// const totalPrice = (pricePerDroid * orderedQuantity);
+function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
+let message;
+// Change code below this line
+const totalPrice = (pricePerDroid * orderedQuantity);
 
-// if (totalPrice <= customerCredits) {
-//     message = `You ordered ${orderedQuantity} droids, you have ${customerCredits - totalPrice} credits left`;
-// } else {
-//     message = 'Insufficient funds!';
-// }
+if (totalPrice <= customerCredits) {
+    message = `You ordered ${orderedQuantity} droids, you have ${customerCredits - totalPrice} credits left`;
+} else {
+    message = 'Insufficient funds!';
+}
 
-// return message;
-// }
+return message;
+}
 
 // console.log(makeTransaction(3000, 5, 23000));
 // console.log(makeTransaction(1000, 3, 15000));
@@ -879,14 +879,14 @@
 // }
 
 
-// // const BRAND_NAME = "SAMSUNG";
-// // const userInput = "saMsUng";
-// // const normalizedToUpperCaseInput = userInput.toUpperCase();
+// const BRAND_NAME = "SAMSUNG";
+// const userInput = "saMsUng";
+// const normalizedToUpperCaseInput = userInput.toUpperCase();
 
-// // console.log(userInput); // 'saMsUng'
-// // console.log(userInput === BRAND_NAME); // false
-// // console.log(normalizedToUpperCaseInput); // 'SAMSUNG'
-// // console.log(normalizedToUpperCaseInput === BRAND_NAME); // true
+// console.log(userInput); // 'saMsUng'
+// console.log(userInput === BRAND_NAME); // false
+// console.log(normalizedToUpperCaseInput); // 'SAMSUNG'
+// console.log(normalizedToUpperCaseInput === BRAND_NAME); // true
 
 // console.log(normalizeInput("Hello world"));
 // console.log(normalizeInput("This ISN'T SpaM"));
@@ -937,18 +937,18 @@
 // Вызов функции checkForSpam("Get rid of sPaM emails. Our book in on sale!") возвращает true
 // Вызов функции checkForSpam("[SPAM] How to earn fast money?") возвращает true
 
-function checkForSpam(message) {
-let result;
-// Change code below this line
-result = (message.includes('sale')) || (message.includes('SPAM')) || (message.includes('spam')) || (message.includes('SalE'));
-// Change code above this line
-return result;
-}
+// function checkForSpam(message) {
+// let result;
+// // Change code below this line
+// result = (message.includes('sale')) || (message.includes('SPAM')) || (message.includes('spam')) || (message.includes('SalE'));
+// // Change code above this line
+// return result;
+// }
 
-console.log(checkForSpam("Latest technology news"));
-console.log(checkForSpam("JavaScript weekly newsletter"));
-console.log(checkForSpam("Get best sale offers now!"));
-console.log(checkForSpam("Amazing SalE, only tonight!"));
-console.log(checkForSpam("Trust me, this is not a spam message"));
-console.log(checkForSpam("Get rid of sPaM emails. Our book in on sale!"));
-console.log(checkForSpam("[SPAM] How to earn fast money?"));
+// console.log(checkForSpam("Latest technology news"));
+// console.log(checkForSpam("JavaScript weekly newsletter"));
+// console.log(checkForSpam("Get best sale offers now!"));
+// console.log(checkForSpam("Amazing SalE, only tonight!"));
+// console.log(checkForSpam("Trust me, this is not a spam message"));
+// console.log(checkForSpam("Get rid of sPaM emails. Our book in on sale!"));
+// console.log(checkForSpam("[SPAM] How to earn fast money?"));
