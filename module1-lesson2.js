@@ -200,8 +200,8 @@
 // %%%%%%% ZADACHA 8 %%%%%%%
 
 
-// const totalSpent = 90;
-// let payment = 2000;
+// let totalSpent = 500;
+// let payment = 200;
 // let discount = 0;
 
 // if (totalSpent < 100) {
@@ -218,7 +218,12 @@
 //     discount = 0.1;
 // }
 
-
+// payment -=payment * discount;
 
 // console.log(`Заказ на сумму ${payment} кредитов, скидка ${discount * 100}%`);
+
+// totalSpent += payment;
+
+// console.log(`Общая сумма потраченная в магазине ${totalSpent} кредитов`);
+
 
